@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333 !important;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    color: #555 !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+/* Background Section */
+.background-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-section h2 {
+    color: #ff0000;
+}
+
+.row {
+    margin: 5px;
+}
+
+.interest-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest-section h2 {
+    color: #ff0000;
+}
+
+.reach-me-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.reach-me-link:hover {
+    color: #ff0000;
+}
+
+/* Work Section */
+.work-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the work section content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow to the images */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0);
+    margin: 30px;
+}
+
+/* Mobile-Specific Styles */
+@media (max-width: 768px) {
+    body {
+        text-align: center; /* Center all text content */
+    }
+
+    h2, p, .navbar-brand, .nav-link, .reach-me-link {
+        text-align: center; /* Center text for headings, paragraphs, and links */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-nav {
+        justify-content: center; /* Center the navigation links */
+        width: 100%;
+        flex-direction: column; /* Stack nav links vertically */
+        text-align: center; /* Center the text of the nav links */
+    }
+
+    .navbar-collapse {
+        justify-content: center; /* Center navbar content */
+    }
+
+    .navbar-toggler {
+        margin: 0 auto; /* Center the toggler button */
+    }
+
+    .background-section,
+    .interest-section,
+    .work-section,
+    .contact-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center all text content */
+    }
+
+    .project-img {
+        margin-bottom: 20px; /* Add space between images on mobile */
+    }
+
+    .reach-me-link {
+        font-size: 1.25rem; /* Adjust footer link size */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
